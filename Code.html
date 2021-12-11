@@ -1,0 +1,85 @@
+<!DOCTYPE html []>
+<html>
+  <head>
+    <title>Code.html</title>
+  </head>
+  <body>
+    <h1 id="code">Code</h1>
+    <p>Below are examples of code I have written:</p>
+    <h2 id="html">HTML</h2>
+    <pre>
+      <code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title&gt;Fizz Buzz&lt;/title&gt;
+&lt;script&gt;
+for (var i=1; i &lt; 101; i++){
+    if (i % 15 == 0) console.log("FizzBuzz")
+    else if (i % 3 == 0) console.log("Fizz");
+    else if (i % 5 == 0) console.log("Buzz");
+    else console.log(i);
+}
+function fizzbuzz() {
+    var display = document.getElementById    ('display');
+    var displayHTML = "";
+    for (i = 0; i &lt; 100; i++) {
+	    displayHTML += "&lt;p&gt;" + i + "&lt;/p&gt;";
+    }
+    display.innerHTML = displayHTML
+}
+
+&lt;/script&gt;
+
+&lt;/head&gt;
+
+&lt;body onload="fizzbuzz()"&gt;
+&lt;div id="display"&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code>
+    </pre>
+    <h2 id="python">Python</h2>
+    <p>def main():</p>
+    <pre>
+      <code>import math
+while (True):
+    try:
+            r=float(input("Radius of Cylinder:"))
+            if(r &lt; 0):
+                print("Negative numbers not allowed, try number greater than 0.")
+                continue
+    except ValueError:
+                print("Error: Enter a positive number.")
+    else:
+                break
+while (True):
+    try:
+            h=float(input("Height of Cyclinder:"))
+            if(h &lt; 0):
+                print("Negative numbers not allowed, try number greater than 0.")
+                continue
+    except ValueError:
+                print("Error: Enter a positive number.")
+    else:
+                break
+volume=math.pi*pow(r,2)*h
+
+print("Volume of Cyclinder: %.2f" %volume)
+
+restart=input("Do you want to find another volume, 'yes' or 'no'.").lower()
+if restart == "yes":
+    main()
+else:
+    exit()
+main()
+</code>
+    </pre>
+    <p>
+      <a href="./README.html">Home Page</a>
+    </p>
+  </body>
+</html>
